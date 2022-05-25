@@ -47,4 +47,11 @@
     position: relative;
     text-align: center;
   }
+
+  .navMenu a {
+    padding: 0 15px;
+    line-height: 27px;
+    height: 27px;
+    font-size: 15px;
+  }
 }
