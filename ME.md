@@ -8,7 +8,7 @@ You can find me in [Github](https://github.com/childrentime) or [Twitter](https:
 
 ## My work
 
-I currently work on [Shoppee](https://shopee.com/) as a front-end junior engineer.
+I currently work on [Shopee](https://shopee.com/) as a front-end junior engineer.
 
 ## What I do when I am not working
 
