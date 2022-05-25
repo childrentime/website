@@ -22,7 +22,7 @@ const Category: NextPage<IProps> = ({ posts, slug }) => {
                 {post.posts.map((p) => (
                   <li key={p.slug}>
                     <span className={styles.date}>{p.date}</span>
-                    <Link href={`/posts/${p.title}`}>
+                    <Link href={`/posts/${p.slug}`}>
                       <a>{p.title}</a>
                     </Link>
                   </li>
