@@ -1,0 +1,105 @@
+.post {
+  padding: 35px 0 50px;
+}
+
+.postTitle {
+  margin: 0;
+  color: #555;
+  text-align: left;
+  font: bold 26px/1.1 "ff-tisa-web-pro", Cambria, Georgia, Cochin, Times,
+    "Times New Roman", serif;
+}
+
+.postMeta {
+  padding: 0;
+  margin: 15px 0 10px 0;
+  color: #6e7173;
+  float: left;
+  display: inline;
+  text-indent: 0.15em;
+}
+
+.tags a {
+  padding: 1px 4px;
+}
+
+.tags a:not(:first-child) {
+  margin-left: 2px;
+}
+
+.postContent {
+  clear: left;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #444;
+  padding-top: 15px;
+  font-family: "ff-tisa-web-pro", Cambria, Georgia, Cochin, Times,
+    "Times New Roman", "Hiragino Mincho", "Hiragino Sans GB",
+    "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei",
+    serif;
+}
+
+.postContent a {
+  color: #444;
+  padding-bottom: 2px;
+  text-decoration: underline;
+}
+
+.postContent h2 {
+  margin: 1.4em 0 1.1em;
+  font-size: 20px;
+}
+
+.postContent img {
+  max-width: 100%;
+  padding: 0.5em 0;
+  margin: auto;
+  display: block;
+}
+
+.postNav {
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  white-space: nowrap;
+  border-top: 1px solid #eee;
+}
+
+.postNav a {
+  display: inline-block;
+  line-height: 25px;
+  font-size: 15px;
+  color: #555;
+  border-bottom: none;
+}
+
+.pre {
+  float: left;
+}
+
+.next {
+  float: right;
+}
+
+.pre::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #888;
+  margin-right: 5px;
+}
+
+.next::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #888;
+  margin-left: 5px;
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://localhost:3000</id>
+    <title>Berlin's Blog</title>
+    <updated>2022-05-25T13:08:28.885Z</updated>
+    <generator>Feed for Node.js</generator>
+    <author>
+        <name>BerLin</name>
+        <email>Wul55267@gmail.com</email>
+        <uri>https://twitter.com/wulianwen1</uri>
+    </author>
+    <link rel="alternate" href="http://localhost:3000"/>
+    <link rel="self" href="http://localhost:3000/rss/atom.xml"/>
+    <logo>http://localhost:3000/logo.svg</logo>
+    <icon>http://localhost:3000/favicon.png</icon>
+    <rights>All rights reserved 2022, Berlin</rights>
+    <entry>
+        <title type="html"><![CDATA[Test Blog]]></title>
+        <id>http://localhost:3000/posts/test</id>
+        <link href="http://localhost:3000/posts/test"/>
+        <updated>2022-05-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>test description <a href="https://nextjs.org/">link</a> dadsa</p>
+]]></summary>
+        <author>
+            <name>BerLin</name>
+            <email>Wul55267@gmail.com</email>
+            <uri>https://twitter.com/wulianwen1</uri>
+        </author>
+        <category label="Tech"/>
+        <category label="node.js"/>
+        <contributor>
+            <name>BerLin</name>
+            <email>Wul55267@gmail.com</email>
+            <uri>https://twitter.com/wulianwen1</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New Blog]]></title>
+        <id>http://localhost:3000/posts/newblog</id>
+        <link href="http://localhost:3000/posts/newblog"/>
+        <updated>2022-05-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>test description <a href="https://nextjs.org/">link</a> dadsa</p>
+]]></summary>
+        <author>
+            <name>BerLin</name>
+            <email>Wul55267@gmail.com</email>
+            <uri>https://twitter.com/wulianwen1</uri>
+        </author>
+        <category label="Announcements"/>
+        <category label="meta"/>
+        <contributor>
+            <name>BerLin</name>
+            <email>Wul55267@gmail.com</email>
+            <uri>https://twitter.com/wulianwen1</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Test1 Blog]]></title>
+        <id>http://localhost:3000/posts/test1</id>
+        <link href="http://localhost:3000/posts/test1"/>
+        <updated>2022-05-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>test description <a href="https://nextjs.org/">link</a> dadsa</p>
+]]></summary>
+        <author>
+            <name>BerLin</name>
+            <email>Wul55267@gmail.com</email>
+            <uri>https://twitter.com/wulianwen1</uri>
+        </author>
+        <category label="Tech"/>
+        <category label="node.js"/>
+        <contributor>
+            <name>BerLin</name>
+            <email>Wul55267@gmail.com</email>
+            <uri>https://twitter.com/wulianwen1</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Test2 Blog]]></title>
+        <id>http://localhost:3000/posts/test2</id>
+        <link href="http://localhost:3000/posts/test2"/>
+        <updated>2021-05-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>test description <a href="https://nextjs.org/">link</a> dadsa</p>
+]]></summary>
+        <author>
+            <name>BerLin</name>
+            <email>Wul55267@gmail.com</email>
+            <uri>https://twitter.com/wulianwen1</uri>
+        </author>
+        <category label="Tech"/>
+        <category label="node.js"/>
+        <contributor>
+            <name>BerLin</name>
+            <email>Wul55267@gmail.com</email>
+            <uri>https://twitter.com/wulianwen1</uri>
+        </contributor>
+    </entry>
+</feed>

@@ -1,0 +1,73 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Berlin's Blog",
+    "home_page_url": "http://localhost:3000",
+    "feed_url": "http://localhost:3000/rss/feed.json",
+    "icon": "http://localhost:3000/logo.svg",
+    "author": {
+        "name": "BerLin",
+        "url": "https://twitter.com/wulianwen1"
+    },
+    "items": [
+        {
+            "id": "http://localhost:3000/posts/test",
+            "url": "http://localhost:3000/posts/test",
+            "title": "Test Blog",
+            "summary": "<p>test description <a href=\"https://nextjs.org/\">link</a> dadsa</p>\n",
+            "date_modified": "2022-05-25T00:00:00.000Z",
+            "author": {
+                "name": "BerLin",
+                "url": "https://twitter.com/wulianwen1"
+            },
+            "tags": [
+                "Tech",
+                "node.js"
+            ]
+        },
+        {
+            "id": "http://localhost:3000/posts/newblog",
+            "url": "http://localhost:3000/posts/newblog",
+            "title": "New Blog",
+            "summary": "<p>test description <a href=\"https://nextjs.org/\">link</a> dadsa</p>\n",
+            "date_modified": "2022-05-24T00:00:00.000Z",
+            "author": {
+                "name": "BerLin",
+                "url": "https://twitter.com/wulianwen1"
+            },
+            "tags": [
+                "Announcements",
+                "meta"
+            ]
+        },
+        {
+            "id": "http://localhost:3000/posts/test1",
+            "url": "http://localhost:3000/posts/test1",
+            "title": "Test1 Blog",
+            "summary": "<p>test description <a href=\"https://nextjs.org/\">link</a> dadsa</p>\n",
+            "date_modified": "2022-05-20T00:00:00.000Z",
+            "author": {
+                "name": "BerLin",
+                "url": "https://twitter.com/wulianwen1"
+            },
+            "tags": [
+                "Tech",
+                "node.js"
+            ]
+        },
+        {
+            "id": "http://localhost:3000/posts/test2",
+            "url": "http://localhost:3000/posts/test2",
+            "title": "Test2 Blog",
+            "summary": "<p>test description <a href=\"https://nextjs.org/\">link</a> dadsa</p>\n",
+            "date_modified": "2021-05-20T00:00:00.000Z",
+            "author": {
+                "name": "BerLin",
+                "url": "https://twitter.com/wulianwen1"
+            },
+            "tags": [
+                "Tech",
+                "node.js"
+            ]
+        }
+    ]
+}

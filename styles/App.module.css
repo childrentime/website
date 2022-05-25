@@ -1,0 +1,114 @@
+.layout {
+  letter-spacing: -0.31em;
+  text-rendering: optimizespeed;
+  font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.left {
+  font-family: "ff-tisa-web-pro", Cambria, Georgia, Cochin, Times,
+    "Times New Roman", "Hiragino Mincho", "Hiragino Sans GB",
+    "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei",
+    serif !important;
+  width: 100%;
+  display: inline-block;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+}
+
+@media screen and (min-width: 48em) {
+  .left {
+    width: 75%;
+    display: inline-block;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+  }
+}
+
+.content {
+  padding-right: 50px;
+  padding-top: 20px;
+}
+
+.right {
+  font-family: "ff-tisa-web-pro", Cambria, Georgia, Cochin, Times,
+    "Times New Roman", "Hiragino Mincho", "Hiragino Sans GB",
+    "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei",
+    serif !important;
+  width: 25%;
+  display: inline-block;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+}
+
+.sidebar {
+  border-left: 1px solid transparent;
+  padding-left: 35px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  font-family: "ff-tisa-web-pro", Cambria, Georgia, Cochin, Times,
+    "Times New Roman", "Hiragino Mincho", "Hiragino Sans GB",
+    "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei",
+    serif;
+}
+
+.widget {
+  margin-bottom: 30px;
+}
+
+.widgetTitle {
+  color: #6e7173;
+  line-height: 1.4;
+  margin-top: 0;
+  font-size: 18px;
+  display: block;
+  font-weight: bold;
+}
+
+.categoryList {
+  list-style: none;
+  padding: 0;
+}
+
+.categoryListItem {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.tagcloud {
+  margin-top: 10px;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+.tagcloud a {
+  line-height: 1.5;
+  padding: 5px 0;
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.footer {
+  padding: 0.8em 0 3.6em;
+  margin-top: 1em;
+  line-height: 2.5;
+  color: #6e7173;
+  text-align: center;
+}
+
+@media print, screen and (max-width: 48em) {
+  .content {
+    padding-right: 15px;
+  }
+  .right {
+    display: none !important;
+  }
+}

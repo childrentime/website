@@ -1,0 +1,50 @@
+.header {
+  padding: 58px 0 0;
+  text-align: left;
+  border-bottom: 1px solid transparent;
+  position: relative;
+}
+
+.title {
+  font: bold 38px/1.12 "ff-tisa-web-pro", Cambria, Georgia, Cochin, Times,
+    "Times New Roman", "Hiragino Mincho", "Hiragino Sans GB",
+    "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei",
+    serif;
+  color: #555;
+}
+
+.description {
+  margin: 0.2em 0 0;
+  color: #999;
+}
+
+.navMenu {
+  margin: 10px 0 -1px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font: "ff-tisa-web-pro", Cambria, Georgia, Cochin, Times, "Times New Roman",
+    "Hiragino Mincho", "Hiragino Sans GB", "Source Han Sans CN",
+    "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", serif;
+}
+
+.navMenu a {
+  display: inline-block;
+  padding: 3px 20px 3px;
+  line-height: 20px;
+  color: #6e7173;
+  font-size: 15px;
+  border: 1px solid transparent;
+}
+
+@media print, screen and (max-width: 48em) {
+  .sitename {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .navMenu {
+    position: relative;
+    text-align: center;
+  }
+}

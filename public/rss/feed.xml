@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Berlin's Blog</title>
+        <link>http://localhost:3000</link>
+        <description></description>
+        <lastBuildDate>Wed, 25 May 2022 13:08:28 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed for Node.js</generator>
+        <image>
+            <title>Berlin's Blog</title>
+            <url>http://localhost:3000/logo.svg</url>
+            <link>http://localhost:3000</link>
+        </image>
+        <copyright>All rights reserved 2022, Berlin</copyright>
+        <item>
+            <title><![CDATA[Test Blog]]></title>
+            <link>http://localhost:3000/posts/test</link>
+            <guid>http://localhost:3000/posts/test</guid>
+            <pubDate>Wed, 25 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>test description <a href="https://nextjs.org/">link</a> dadsa</p>
+]]></description>
+            <author>Wul55267@gmail.com (BerLin)</author>
+            <category>Tech</category>
+            <category>node.js</category>
+        </item>
+        <item>
+            <title><![CDATA[New Blog]]></title>
+            <link>http://localhost:3000/posts/newblog</link>
+            <guid>http://localhost:3000/posts/newblog</guid>
+            <pubDate>Tue, 24 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>test description <a href="https://nextjs.org/">link</a> dadsa</p>
+]]></description>
+            <author>Wul55267@gmail.com (BerLin)</author>
+            <category>Announcements</category>
+            <category>meta</category>
+        </item>
+        <item>
+            <title><![CDATA[Test1 Blog]]></title>
+            <link>http://localhost:3000/posts/test1</link>
+            <guid>http://localhost:3000/posts/test1</guid>
+            <pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>test description <a href="https://nextjs.org/">link</a> dadsa</p>
+]]></description>
+            <author>Wul55267@gmail.com (BerLin)</author>
+            <category>Tech</category>
+            <category>node.js</category>
+        </item>
+        <item>
+            <title><![CDATA[Test2 Blog]]></title>
+            <link>http://localhost:3000/posts/test2</link>
+            <guid>http://localhost:3000/posts/test2</guid>
+            <pubDate>Thu, 20 May 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>test description <a href="https://nextjs.org/">link</a> dadsa</p>
+]]></description>
+            <author>Wul55267@gmail.com (BerLin)</author>
+            <category>Tech</category>
+            <category>node.js</category>
+        </item>
+    </channel>
+</rss>
