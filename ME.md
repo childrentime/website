@@ -14,3 +14,4 @@ I currently work on [Shoppee](https://shopee.com/) as a front-end junior enginee
 
 - Watching TV: Friends, Money Heist, Sex Eduction and so on. I am a faithful user of Netflix.
 - Sports: I run 5K or go to the gym sometimes.
+- Reading: Reading is an essential part of my life. I'm reading Pride and Prejudice recently😄.
