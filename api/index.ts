@@ -7,6 +7,7 @@ import dayjs from "dayjs";
 const dirName = "docs";
 const ext = ".md";
 const dirPath = path.join(process.cwd(), dirName);
+const aboutPath = path.join(process.cwd(), "ME.md");
 
 export interface IItem {
   title: string;
@@ -22,6 +23,11 @@ interface ISlug {
 
 export type IItemSlug = IItem & ISlug;
 export type IItemContent = IItem & { content: string };
+
+export const getAbout = (): string => {
+  const file = fs.readFileSync(aboutPath, "utf-8");
+  return markdown.render(file);
+};
 
 // 获取博文列表
 export const getPostList = (): IItemSlug[] => {

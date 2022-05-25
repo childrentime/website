@@ -1,0 +1,23 @@
+.post {
+  padding: 35px 0 50px;
+}
+
+.postTitle {
+  margin: 0;
+  color: #555;
+  text-align: left;
+  font: bold 26px/1.1 "ff-tisa-web-pro", Cambria, Georgia, Cochin, Times,
+    "Times New Roman", serif;
+}
+
+.postContent {
+  clear: left;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #444;
+  padding-top: 15px;
+  font-family: "ff-tisa-web-pro", Cambria, Georgia, Cochin, Times,
+    "Times New Roman", "Hiragino Mincho", "Hiragino Sans GB",
+    "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei",
+    serif;
+}
