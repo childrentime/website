@@ -2,7 +2,7 @@
 title: A list of gifts to satisfy your girlfriend
 date: '2022-05-26'
 category: Life
-tag: 'shopping guide'
+tag: 'shopping-guide'
 description: "I am often confused about what gift to buy for my girlfriend for the holidays. So I create this gift list which has a great feedback. I wish it will help you"
 ---
 

@@ -13,5 +13,5 @@ export const tags = [
   "javascript",
   "node.js",
   "year-end",
-  "shopping guide",
+  "shopping-guide",
 ];
