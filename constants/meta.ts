@@ -8,4 +8,10 @@ export const about = "About";
 export const rss = "RSS";
 
 export const category = ["Announcements", "Life", "Tech"];
-export const tags = ["meta", "javascript", "node.js", "year-end"];
+export const tags = [
+  "meta",
+  "javascript",
+  "node.js",
+  "year-end",
+  "shopping guide",
+];
