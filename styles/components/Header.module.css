@@ -45,6 +45,7 @@
   line-height: 20px;
   color: var(--c-meta);
   font-size: 15px;
+  cursor: pointer;
 }
 
 .button span {
