@@ -10,12 +10,12 @@
     "Times New Roman", "Hiragino Mincho", "Hiragino Sans GB",
     "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei",
     serif;
-  color: #555;
+  color: var(--c-title);
 }
 
 .description {
   margin: 0.2em 0 0;
-  color: #999;
+  color: var(--c-description);
 }
 
 .navMenu {
@@ -33,9 +33,22 @@
   display: inline-block;
   padding: 3px 20px 3px;
   line-height: 20px;
-  color: #6e7173;
+  color: var(--c-meta);
   font-size: 15px;
   border: 1px solid transparent;
+}
+
+.button {
+  display: inline-block;
+  border: 0;
+  background: 0 0;
+  line-height: 20px;
+  color: var(--c-meta);
+  font-size: 15px;
+}
+
+.button span {
+  vertical-align: sub;
 }
 
 @media print, screen and (max-width: 48em) {
@@ -48,8 +61,14 @@
     text-align: center;
   }
 
-  .navMenu a {
-    padding: 0 15px;
+  .navMenu a:not(:last-child) {
+    padding: 0 10px;
+    line-height: 27px;
+    height: 27px;
+    font-size: 15px;
+  }
+
+  .button {
     line-height: 27px;
     height: 27px;
     font-size: 15px;

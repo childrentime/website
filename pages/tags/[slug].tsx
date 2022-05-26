@@ -1,9 +1,10 @@
 import { getPostsByTag, IPostArchive } from "../../api";
-import { tags } from "../../constants/meta";
+import { tags, title } from "../../constants/meta";
 import Link from "next/link";
 import { Fragment } from "react";
 import styles from "../../styles/category/Category.module.css";
 import { NextPage } from "next";
+import Head from "next/head";
 
 interface IProps {
   posts: IPostArchive[];
@@ -12,6 +13,11 @@ interface IProps {
 const Tag: NextPage<IProps> = ({ posts, slug }) => {
   return (
     <>
+      <Head>
+        <title>{`tag | ${title}`}</title>
+        <meta name="description" content={`this is ${title}`} />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <h1 className={styles.title}>{`Reading articles in ${slug}`}</h1>
       <div className={styles.post}>
         <div className={styles.postArchive}>

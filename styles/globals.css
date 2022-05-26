@@ -1,3 +1,35 @@
+:root {
+  --c-bg: #ffffff;
+  --c-title: #555;
+  --c-meta: #6e7173;
+  --c-content: #444;
+  --c-content-a: #444;
+  --c-nav: #eee;
+  --c-nav-a: #555;
+  --c-pre: #888;
+  --c-widget-title: #6e7173;
+  --c-footer: #6e7173;
+  --c-description: #999;
+  --c-category-title: #888;
+  --c-code-bg: #f7f8f8;
+  --c-code-border: #dadada;
+}
+
+html.dark {
+  --c-bg: #22272e;
+  --c-title: #adbac7;
+  --c-meta: #c8d1da;
+  --c-content: #ebf0f5;
+  --c-content-a: #ebf0f5;
+  --c-nav: #f2f7fd;
+  --c-nav-a: #adbac7;
+  --c-widget-title: #c8d1da;
+  --c-footer: #c8d1da;
+  --c-category-title: #b4c7da;
+  --c-description: #ebedef;
+  --c-pre: #e0eeee;
+}
+
 html,
 body {
   padding: 0;
@@ -8,8 +40,12 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  background-color: var(--c-bg);
+}
+
 a {
-  color: #6e7173;
+  color: var(--c-meta);
   background-color: transparent;
   text-decoration: none;
 }
@@ -50,7 +86,7 @@ p code {
   font-family: "Courier", monospace;
   margin: 0 3px;
   padding: 1px 4px;
-  background: #f7f8f8;
-  border: 1px solid #dadada;
+  background: var(--c-code-bg);
+  border: 1px var(--c-code-border);
   border-radius: 2px;
 }

@@ -1,8 +1,9 @@
 import { NextPage } from "next";
+import Head from "next/head";
 import Link from "next/link";
 import { Fragment } from "react";
 import { getPostsByCategory, IPostArchive } from "../../api";
-import { category } from "../../constants/meta";
+import { category, title } from "../../constants/meta";
 import styles from "../../styles/category/Category.module.css";
 
 interface IProps {
@@ -12,6 +13,11 @@ interface IProps {
 const Category: NextPage<IProps> = ({ posts, slug }) => {
   return (
     <>
+      <Head>
+        <title>{`category | ${title}`}</title>
+        <meta name="description" content={`this is ${title}`} />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <h1 className={styles.title}>{`Reading articles in ${slug}`}</h1>
       <div className={styles.post}>
         <div className={styles.postArchive}>

@@ -1,5 +1,6 @@
 import dayjs from "dayjs";
 import { NextPage } from "next";
+import Head from "next/head";
 import Link from "next/link";
 import {
   getPostBySlug,
@@ -8,6 +9,7 @@ import {
   IItemContent,
   IPrevNextPost,
 } from "../../api";
+import { title } from "../../constants/meta";
 import styles from "../../styles/posts/Slug.module.css";
 
 interface IProps {
@@ -18,6 +20,11 @@ const Post: NextPage<IProps> = ({ post, nav }) => {
   const { previous, next } = nav;
   return (
     <>
+      <Head>
+        <title>{`${post.title} | ${title}`}</title>
+        <meta name="description" content={`this is ${title}`} />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={styles.post}>
         <h1 className={styles.postTitle}>{post.title}</h1>
         <div className={styles.postMeta}>

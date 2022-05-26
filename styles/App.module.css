@@ -65,7 +65,7 @@
 }
 
 .widgetTitle {
-  color: #6e7173;
+  color: var(--c-widget-title);
   line-height: 1.4;
   margin-top: 0;
   font-size: 18px;
@@ -100,7 +100,7 @@
   padding: 0.8em 0 3.6em;
   margin-top: 1em;
   line-height: 2.5;
-  color: #6e7173;
+  color: var(--c-footer);
   text-align: center;
 }
 

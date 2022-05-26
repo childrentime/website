@@ -4,7 +4,7 @@
 
 .postTitle {
   margin: 0;
-  color: #555;
+  color: var(--c-title);
   text-align: left;
   font: bold 26px/1.1 "ff-tisa-web-pro", Cambria, Georgia, Cochin, Times,
     "Times New Roman", serif;
@@ -13,7 +13,7 @@
 .postMeta {
   padding: 0;
   margin: 15px 0 10px 0;
-  color: #6e7173;
+  color: var(--c-meta);
   float: left;
   display: inline;
   text-indent: 0.15em;
@@ -31,7 +31,7 @@
   clear: left;
   font-size: 18px;
   line-height: 1.5;
-  color: #444;
+  color: var(--c-content);
   padding-top: 15px;
   font-family: "ff-tisa-web-pro", Cambria, Georgia, Cochin, Times,
     "Times New Roman", "Hiragino Mincho", "Hiragino Sans GB",
@@ -40,7 +40,7 @@
 }
 
 .postContent a {
-  color: #444;
+  color: var(--c-content-a);
   padding-bottom: 2px;
   text-decoration: underline;
 }
@@ -63,14 +63,14 @@
   margin-bottom: 20px;
   padding: 10px;
   white-space: nowrap;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--c-nav);
 }
 
 .postNav a {
   display: inline-block;
   line-height: 25px;
   font-size: 15px;
-  color: #555;
+  color: var(--c-nav-a);
   border-bottom: none;
 }
 
@@ -89,7 +89,7 @@
   height: 0;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-right: 5px solid #888;
+  border-right: 5px solid var(--c-pre);
   margin-right: 5px;
 }
 
@@ -100,6 +100,6 @@
   height: 0;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid #888;
+  border-left: 5px solid var(--c-pre);
   margin-left: 5px;
 }

@@ -4,20 +4,20 @@
 
 .postTitle {
   margin: 0;
-  color: #555;
+  color: var(--c-title);
   text-align: left;
   font: bold 26px/1.1 "ff-tisa-web-pro", Cambria, Georgia, Cochin, Times,
     "Times New Roman", serif;
 }
 
 .postTitle a {
-  color: #555;
+  color: var(--c-title);
 }
 
 .postMeta {
   padding: 0;
   margin: 15px 0 10px 0;
-  color: #6e7173;
+  color: var(--c-meta);
   float: left;
   display: inline;
   text-indent: 0.15em;
@@ -27,7 +27,7 @@
   clear: left;
   font-size: 18px;
   line-height: 1.5;
-  color: #444;
+  color: var(--c-content);
   padding-top: 15px;
   font-family: "ff-tisa-web-pro", Cambria, Georgia, Cochin, Times,
     "Times New Roman", "Hiragino Mincho", "Hiragino Sans GB",
@@ -36,14 +36,14 @@
 }
 
 .postContent a {
-  color: #444;
+  color: var(--c-content-a);
   padding-bottom: 2px;
   text-decoration: underline;
 }
 
 .readmore a {
   font-size: 16px;
-  color: #6e7173;
+  color: var(--c-meta);
   margin: -10px 0;
   padding: 5px 10px;
   border: 1px solid transparent;
