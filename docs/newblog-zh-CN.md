@@ -1,5 +1,5 @@
 ---
-title: New Blog
+title: 新的博客
 date: '2022-05-25'
 category: Announcements
 tag: 'meta'

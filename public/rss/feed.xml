@@ -4,7 +4,7 @@
         <title>Berlin's Blog</title>
         <link>http://localhost:3000</link>
         <description></description>
-        <lastBuildDate>Thu, 02 Jun 2022 04:56:54 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 Jun 2022 05:10:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,6 +13,17 @@
             <link>http://localhost:3000</link>
         </image>
         <copyright>All rights reserved 2022, Berlin</copyright>
+        <item>
+            <title><![CDATA[About Me, The Bad Part]]></title>
+            <link>http://localhost:3000/posts/about-me-the-bad-part</link>
+            <guid>http://localhost:3000/posts/about-me-the-bad-part</guid>
+            <pubDate>Thu, 02 Jun 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Something bad happened recently and I feel very guilty</p>
+]]></description>
+            <author>Wul55267@gmail.com (BerLin)</author>
+            <category>Life</category>
+            <category>news</category>
+        </item>
         <item>
             <title><![CDATA[A list of gifts to satisfy your girlfriend]]></title>
             <link>http://localhost:3000/posts/gift</link>

@@ -14,6 +14,7 @@ export const tags = [
   "node.js",
   "year-end",
   "shopping-guide",
+  "news",
 ];
 
 export const CHINISE = "-zh-CN";

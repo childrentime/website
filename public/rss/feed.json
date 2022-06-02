@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "http://localhost:3000/posts/about-me-the-bad-part",
+            "url": "http://localhost:3000/posts/about-me-the-bad-part",
+            "title": "About Me, The Bad Part",
+            "summary": "<p>Something bad happened recently and I feel very guilty</p>\n",
+            "date_modified": "2022-06-02T00:00:00.000Z",
+            "author": {
+                "name": "BerLin",
+                "url": "https://twitter.com/wulianwen1"
+            },
+            "tags": [
+                "Life",
+                "news"
+            ]
+        },
+        {
             "id": "http://localhost:3000/posts/gift",
             "url": "http://localhost:3000/posts/gift",
             "title": "A list of gifts to satisfy your girlfriend",
