@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:3000</id>
     <title>Berlin's Blog</title>
-    <updated>2022-05-26T08:04:29.073Z</updated>
+    <updated>2022-06-02T04:56:54.956Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>BerLin</name>
@@ -14,6 +14,26 @@
     <logo>http://localhost:3000/logo.svg</logo>
     <icon>http://localhost:3000/favicon.png</icon>
     <rights>All rights reserved 2022, Berlin</rights>
+    <entry>
+        <title type="html"><![CDATA[A list of gifts to satisfy your girlfriend]]></title>
+        <id>http://localhost:3000/posts/gift</id>
+        <link href="http://localhost:3000/posts/gift"/>
+        <updated>2022-05-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>I am often confused about what gift to buy for my girlfriend for the holidays. So I create this gift list which has a great feedback. I wish it will help you</p>
+]]></summary>
+        <author>
+            <name>BerLin</name>
+            <email>Wul55267@gmail.com</email>
+            <uri>https://twitter.com/wulianwen1</uri>
+        </author>
+        <category label="Life"/>
+        <category label="shopping-guide"/>
+        <contributor>
+            <name>BerLin</name>
+            <email>Wul55267@gmail.com</email>
+            <uri>https://twitter.com/wulianwen1</uri>
+        </contributor>
+    </entry>
     <entry>
         <title type="html"><![CDATA[New Blog]]></title>
         <id>http://localhost:3000/posts/newblog</id>

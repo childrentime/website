@@ -2,6 +2,7 @@ import dayjs from "dayjs";
 import { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import {
   getPostBySlug,
   getPostSlugs,
@@ -9,15 +10,29 @@ import {
   IItemContent,
   IPrevNextPost,
 } from "../../api";
-import { title } from "../../constants/meta";
+import { CHINISE, title } from "../../constants/meta";
 import styles from "../../styles/posts/Slug.module.css";
 
 interface IProps {
   post: IItemContent;
   nav: IPrevNextPost;
 }
+
 const Post: NextPage<IProps> = ({ post, nav }) => {
   const { previous, next } = nav;
+  const router = useRouter();
+  const toggleEnglish = () => {
+    const slug = router.query.slug as string;
+    if (slug.endsWith(CHINISE)) {
+      router.push(`${slug.substring(0, slug.length - 6)}`);
+    }
+  };
+  const toggleChinese = () => {
+    const slug = router.query.slug as string;
+    if (!slug.endsWith(CHINISE)) {
+      router.push(`${slug.concat(CHINISE)}`);
+    }
+  };
   return (
     <>
       <Head>
@@ -26,6 +41,11 @@ const Post: NextPage<IProps> = ({ post, nav }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.post}>
+        <div className={styles.i18n}>
+          <span onClick={toggleEnglish}>English</span>
+          <span> | </span>
+          <span onClick={toggleChinese}>中文</span>
+        </div>
         <h1 className={styles.postTitle}>{post.title}</h1>
         <div className={styles.postMeta}>
           {dayjs(post.date).format("MMM DD,YYYY")}

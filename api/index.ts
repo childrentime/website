@@ -3,6 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import markdown from "../constants/markdown";
 import dayjs from "dayjs";
+import { CHINISE } from "../constants/meta";
 
 const dirName = "docs";
 const ext = ".md";
@@ -35,6 +36,9 @@ export const getPostList = (): IItemSlug[] => {
   // 文件数组
   const files: string[] = fs.readdirSync(dirPath);
   for (const file of files) {
+    if (file.substring(0, file.length - 3).endsWith(CHINISE)) {
+      continue;
+    }
     const filePath = path.join(dirPath, file);
     const fileContent = fs.readFileSync(filePath, "utf-8");
     const data = matter(fileContent).data as IItem;

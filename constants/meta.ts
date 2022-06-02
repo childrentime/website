@@ -15,3 +15,5 @@ export const tags = [
   "year-end",
   "shopping-guide",
 ];
+
+export const CHINISE = "-zh-CN";

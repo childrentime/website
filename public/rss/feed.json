@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "http://localhost:3000/posts/gift",
+            "url": "http://localhost:3000/posts/gift",
+            "title": "A list of gifts to satisfy your girlfriend",
+            "summary": "<p>I am often confused about what gift to buy for my girlfriend for the holidays. So I create this gift list which has a great feedback. I wish it will help you</p>\n",
+            "date_modified": "2022-05-26T00:00:00.000Z",
+            "author": {
+                "name": "BerLin",
+                "url": "https://twitter.com/wulianwen1"
+            },
+            "tags": [
+                "Life",
+                "shopping-guide"
+            ]
+        },
+        {
             "id": "http://localhost:3000/posts/newblog",
             "url": "http://localhost:3000/posts/newblog",
             "title": "New Blog",

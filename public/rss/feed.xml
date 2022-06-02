@@ -4,7 +4,7 @@
         <title>Berlin's Blog</title>
         <link>http://localhost:3000</link>
         <description></description>
-        <lastBuildDate>Thu, 26 May 2022 08:04:29 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 Jun 2022 04:56:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,6 +13,17 @@
             <link>http://localhost:3000</link>
         </image>
         <copyright>All rights reserved 2022, Berlin</copyright>
+        <item>
+            <title><![CDATA[A list of gifts to satisfy your girlfriend]]></title>
+            <link>http://localhost:3000/posts/gift</link>
+            <guid>http://localhost:3000/posts/gift</guid>
+            <pubDate>Thu, 26 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>I am often confused about what gift to buy for my girlfriend for the holidays. So I create this gift list which has a great feedback. I wish it will help you</p>
+]]></description>
+            <author>Wul55267@gmail.com (BerLin)</author>
+            <category>Life</category>
+            <category>shopping-guide</category>
+        </item>
         <item>
             <title><![CDATA[New Blog]]></title>
             <link>http://localhost:3000/posts/newblog</link>
