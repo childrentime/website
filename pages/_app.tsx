@@ -12,7 +12,7 @@ export function getStaticProps() {
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className="body-container">
-      <div
+      <script
         dangerouslySetInnerHTML={{
           // 增加一个自执行的函数
           __html: `
@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         })();
       `,
         }}
-      ></div>
+      ></script>
       <Header />
       <div className={styles.layout}>
         <div className={styles.left}>
