@@ -15,12 +15,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      const root = document.getRootNode() as Document;
-      root.children[0].classList.add("dark");
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setDark(true);
     }
   }, []);

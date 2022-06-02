@@ -4,7 +4,6 @@ import styles from "../styles/App.module.css";
 import Link from "next/link";
 import { category, github, tags, title, twitter } from "../constants/meta";
 import Header from "../components/header";
-import generateRssFeed from "../constants/rss";
 
 export function getStaticProps() {
   return {};
@@ -13,6 +12,20 @@ export function getStaticProps() {
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className="body-container">
+      <div
+        dangerouslySetInnerHTML={{
+          // 增加一个自执行的函数
+          __html: `
+        (function () {
+          const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+          const root = document.getRootNode()
+          if(darkQuery.matches){
+            root.children[0].classList.add("dark");
+          }
+        })();
+      `,
+        }}
+      ></div>
       <Header />
       <div className={styles.layout}>
         <div className={styles.left}>
