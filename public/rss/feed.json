@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "http://localhost:3000/posts/type-challenge",
+            "url": "http://localhost:3000/posts/type-challenge",
+            "title": "Type Challenge",
+            "summary": "<p>This blog is used to record the answers of <a href=\"https://github.com/type-challenges/type-challenges\">type challenge</a></p>\n",
+            "date_modified": "2022-06-07T00:00:00.000Z",
+            "author": {
+                "name": "BerLin",
+                "url": "https://twitter.com/wulianwen1"
+            },
+            "tags": [
+                "Tech",
+                "typescript"
+            ]
+        },
+        {
             "id": "http://localhost:3000/posts/about-me-the-bad-part",
             "url": "http://localhost:3000/posts/about-me-the-bad-part",
             "title": "About Me, The Bad Part",

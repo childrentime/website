@@ -15,6 +15,7 @@ export const tags = [
   "year-end",
   "shopping-guide",
   "news",
+  "typescript",
 ];
 
 export const CHINISE = "-zh-CN";

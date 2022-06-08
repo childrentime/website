@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:3000</id>
     <title>Berlin's Blog</title>
-    <updated>2022-06-07T11:18:39.024Z</updated>
+    <updated>2022-06-08T03:25:58.637Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>BerLin</name>
@@ -14,6 +14,26 @@
     <logo>http://localhost:3000/logo.svg</logo>
     <icon>http://localhost:3000/favicon.png</icon>
     <rights>All rights reserved 2022, Berlin</rights>
+    <entry>
+        <title type="html"><![CDATA[Type Challenge]]></title>
+        <id>http://localhost:3000/posts/type-challenge</id>
+        <link href="http://localhost:3000/posts/type-challenge"/>
+        <updated>2022-06-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>This blog is used to record the answers of <a href="https://github.com/type-challenges/type-challenges">type challenge</a></p>
+]]></summary>
+        <author>
+            <name>BerLin</name>
+            <email>Wul55267@gmail.com</email>
+            <uri>https://twitter.com/wulianwen1</uri>
+        </author>
+        <category label="Tech"/>
+        <category label="typescript"/>
+        <contributor>
+            <name>BerLin</name>
+            <email>Wul55267@gmail.com</email>
+            <uri>https://twitter.com/wulianwen1</uri>
+        </contributor>
+    </entry>
     <entry>
         <title type="html"><![CDATA[About Me, The Bad Part]]></title>
         <id>http://localhost:3000/posts/about-me-the-bad-part</id>

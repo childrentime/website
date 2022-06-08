@@ -4,7 +4,7 @@
         <title>Berlin's Blog</title>
         <link>http://localhost:3000</link>
         <description></description>
-        <lastBuildDate>Tue, 07 Jun 2022 11:18:39 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Jun 2022 03:25:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,6 +13,17 @@
             <link>http://localhost:3000</link>
         </image>
         <copyright>All rights reserved 2022, Berlin</copyright>
+        <item>
+            <title><![CDATA[Type Challenge]]></title>
+            <link>http://localhost:3000/posts/type-challenge</link>
+            <guid>http://localhost:3000/posts/type-challenge</guid>
+            <pubDate>Tue, 07 Jun 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>This blog is used to record the answers of <a href="https://github.com/type-challenges/type-challenges">type challenge</a></p>
+]]></description>
+            <author>Wul55267@gmail.com (BerLin)</author>
+            <category>Tech</category>
+            <category>typescript</category>
+        </item>
         <item>
             <title><![CDATA[About Me, The Bad Part]]></title>
             <link>http://localhost:3000/posts/about-me-the-bad-part</link>
