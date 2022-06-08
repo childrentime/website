@@ -109,3 +109,54 @@ type MyParameters<T extends (...args: any[]) => any> = T extends (
   : never;
 
 ```
+
+## Medium
+
+### Get Return Type
+
+```ts
+type MyReturnType<T> = T extends (...args: any[]) => infer R ? R : never;
+```
+
+### Omit
+
+```ts
+type MyOmit<T,K> = Pick<T, Exclude<keyof T, K>>
+```
+
+### Readonly 2
+
+```ts
+type MyReadonly2<T, K = keyof T> = {
+  readonly [Key in keyof T as Key extends K ? Key : never]: T[Key];
+} & { [Key in keyof T as Key extends K ? never : Key]: T[Key] };
+
+type MyReadonly2<T, K extends keyof T = keyof T> = { readonly [P in K]: T[P] } & Omit<T, K>;
+```
+
+### Deep Readonly
+
+```ts
+type DeepReadonly<T> = T extends Function
+  ? T
+  : T extends object
+  ? { readonly [P in keyof T]: DeepReadonly<T[P]> }
+  : T;
+
+type PrimitiveType = number | string | boolean;
+type AtomicObject = Function | Promise<any> | Date | RegExp;
+type WeakReferences = WeakMap<any, any> | WeakSet<any>;
+type Immutable<T> = T extends PrimitiveType
+  ? T
+  : T extends AtomicObject
+  ? T
+  : T extends ReadonlyMap<infer K, infer V>
+  ? ReadonlyMap<Immutable<K>, Immutable<V>>
+  : T extends ReadonlySet<infer V>
+  ? ReadonlySet<Immutable<V>>
+  : T extends WeakReferences
+  ? T
+  : T extends object
+  ? { readonly [K in keyof T]: Immutable<T[K]> }
+  : T;
+```
