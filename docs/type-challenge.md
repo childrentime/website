@@ -40,6 +40,8 @@ type TupleToObject<T extends ReadonlyArray<any>> = {
 
 ```ts
 type First<T extends any[]> = T["length"] extends 0 ? never : T[0];
+
+type First<T extends any[]> = T extends [infer F, ...infer Rest] ? F : never
 ```
 
 ### Length Of Tuple
@@ -159,4 +161,89 @@ type Immutable<T> = T extends PrimitiveType
   : T extends object
   ? { readonly [K in keyof T]: Immutable<T[K]> }
   : T;
+```
+
+### TupleToUnion
+
+```ts
+type TupleToUnion<T extends any[]> = T extends [infer F, ...infer Rest] ? F | TupleToUnion<Rest>: never
+
+type TupleToUnion<T extends any[]> = T[number]
+```
+
+### Chainable Options
+
+```ts
+type Chainable<Pre = {}> = {
+  option<K extends string, V>(
+    key: K extends keyof Pre ? never : K,
+    value: V
+  ): Chainable<Pre & { [key in K]: V }>;
+  get(): Pre;
+};
+```
+
+### Last Of Array
+
+```ts
+type Last<T extends any[]> = T extends [...infer Rest, infer L] ? L : never;
+
+type Last<T extends any[]> = T extends [infer F, ...infer Rest]
+  ? T["length"] extends 1
+    ? F
+    : Last<Rest>
+  : never;
+
+```
+
+### Pop
+
+```ts
+type Pop<T extends any[]> = T extends [...infer Rest, infer L] ? Rest : [];
+```
+
+### Promise.All
+
+```ts
+type MyAwaited<T> = T extends Promise<infer U> ? MyAwaited<U> : T;
+declare function PromiseAll<T extends readonly unknown[] | []>(
+  values: T
+): Promise<{ -readonly [P in keyof T]: MyAwaited<T[P]> }>;
+
+```
+
+### LookUp
+
+```ts
+type LookUp<U, T> = U extends { type: T } ? U : never;
+```
+
+### TrimLeft
+
+```ts
+type TrimLeft<S extends string> = S extends `${WhiteSpace}${infer Rest}`
+  ? TrimLeft<Rest>
+  : S;
+```
+
+### Trim
+
+```ts
+
+type WhiteSpace = " " | "\t" | "\n";
+type TrimLeft<S extends string> = S extends `${WhiteSpace}${infer Rest}`
+  ? TrimLeft<Rest>
+  : S;
+type TrimRight<S extends string> = S extends `${infer Rest}${WhiteSpace}`
+  ? TrimRight<Rest>
+  : S;
+type Trim<S extends string> = TrimLeft<TrimRight<S>>;
+```
+
+### Capitalize
+
+```ts
+type MyCapitalize<S extends string> = S extends `${infer F}${infer Rest}`
+  ? `${Uppercase<F>}${Rest}`
+  : S;
 ```
