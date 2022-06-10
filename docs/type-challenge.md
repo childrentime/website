@@ -275,3 +275,46 @@ type ReplaceAll<
   ? `${F}${To}${ReplaceAll<L, From, To>}`
   : S;
 ```
+
+### AppendArgument
+
+```ts
+type AppendArgument<Fn extends (...args: any[]) => any, I> = Fn extends (
+  ...args: infer A
+) => infer R
+  ? (...args: [...A, I]) => R
+  : never;
+
+type AppendArgument<Fn extends (...args: any[]) => any, I> = (
+  ...args: [...Parameters<Fn>, I]
+) => ReturnType<Fn>;
+```
+
+### Permutation
+
+```ts
+type Permutation<T extends keyof any> = [T] extends [never]
+  ? []
+  : { [P in T]: [P, ...Permutation<Exclude<T, P>>] }[T];
+```
+
+### LengthOfString
+
+```ts
+type LengthOfString<
+  S extends string,
+  A extends any[] = []
+> = S extends `${infer L}${infer R}`
+  ? LengthOfString<R, [...A, L]>
+  : A["length"];
+```
+
+### Flatten
+
+```ts
+type Flatten<Els extends unknown[]> = Els extends [infer F, ...infer R]
+  ? F extends unknown[]
+    ? [...Flatten<F>, ...Flatten<R>]
+    : [F, ...Flatten<R>]
+  : [];
+```

@@ -19,3 +19,9 @@ export const tags = [
 ];
 
 export const CHINISE = "-zh-CN";
+
+type Flatten<Els extends unknown[]> = Els extends [infer F, ...infer R]
+  ? F extends unknown[]
+    ? [...Flatten<F>, ...Flatten<R>]
+    : [F, ...Flatten<R>]
+  : [];
