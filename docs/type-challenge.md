@@ -247,3 +247,31 @@ type MyCapitalize<S extends string> = S extends `${infer F}${infer Rest}`
   ? `${Uppercase<F>}${Rest}`
   : S;
 ```
+
+### Replace
+
+```ts
+type Replace<
+  S extends string,
+  From extends string,
+  To extends string
+> = From extends ""
+  ? S
+  : S extends `${infer F}${From}${infer L}`
+  ? `${F}${To}${L}`
+  : S;
+```
+
+### Replace All
+
+```ts
+type ReplaceAll<
+  S extends string,
+  From extends string,
+  To extends string
+> = From extends ""
+  ? S
+  : S extends `${infer F}${From}${infer L}`
+  ? `${F}${To}${ReplaceAll<L, From, To>}`
+  : S;
+```
