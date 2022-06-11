@@ -318,3 +318,39 @@ type Flatten<Els extends unknown[]> = Els extends [infer F, ...infer R]
     : [F, ...Flatten<R>]
   : [];
 ```
+
+### AppendToObject
+
+```ts
+type AppendToObject<T extends object, U extends string, V> = {
+  [K in keyof T | U]: K extends keyof T ? T[K] : V;
+};
+```
+
+### Absolute
+
+```ts
+type Absolute<T extends number | string | bigint> = `${T}` extends `-${infer R}`
+  ? R
+  : `${T}`;
+```
+
+### StringToUnion
+
+```ts
+type StringToUnion<T extends string> = T extends `${infer F}${infer R}`
+  ? F | StringToUnion<R>
+  : never;
+```
+
+### Merge
+
+```ts
+type Merge<F extends object, S extends object> = {
+  [K in keyof F | keyof S]: K extends keyof S
+    ? S[K]
+    : K extends keyof F
+    ? F[K]
+    : never;
+};
+```
