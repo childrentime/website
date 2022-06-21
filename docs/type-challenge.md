@@ -354,3 +354,40 @@ type Merge<F extends object, S extends object> = {
     : never;
 };
 ```
+
+### ConverToKebCase
+
+```ts
+type converToKebCase<S extends string> = S extends `${infer H}${infer Rest}`
+  ? H extends Uncapitalize<H>
+    ? `${H}${converToKebCase<Rest>}`
+    : `-${Uncapitalize<H>}${converToKebCase<Rest>}`
+  : "";
+type KebabCase<S extends string> = converToKebCase<Uncapitalize<S>>;
+```
+
+### Diff
+
+```ts
+type Diff<F, S> = {
+  [K in keyof F | keyof S as K extends keyof F
+    ? K extends keyof S
+      ? never
+      : K
+    : K extends keyof S
+    ? K
+    : never]: K extends keyof F
+    ? K extends keyof S
+      ? never
+      : F[K]
+    : K extends keyof S
+    ? S[K]
+    : never;
+};
+```
+
+### AnyOf
+
+```ts
+
+```
