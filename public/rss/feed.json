@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "http://localhost:3000/posts/girlfriend",
+            "url": "http://localhost:3000/posts/girlfriend",
+            "title": "A list of everything my girlfriend likes",
+            "summary": "<p>This blog is used to record everything my girlfriend likes❤</p>\n",
+            "date_modified": "2022-07-07T00:00:00.000Z",
+            "author": {
+                "name": "BerLin",
+                "url": "https://twitter.com/wulianwen1"
+            },
+            "tags": [
+                "Life",
+                "news"
+            ]
+        },
+        {
             "id": "http://localhost:3000/posts/type-challenge",
             "url": "http://localhost:3000/posts/type-challenge",
             "title": "Type Challenge",

@@ -4,7 +4,7 @@
         <title>Berlin's Blog</title>
         <link>http://localhost:3000</link>
         <description></description>
-        <lastBuildDate>Thu, 07 Jul 2022 04:05:50 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 26 Jul 2022 06:26:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,6 +13,17 @@
             <link>http://localhost:3000</link>
         </image>
         <copyright>All rights reserved 2022, Berlin</copyright>
+        <item>
+            <title><![CDATA[A list of everything my girlfriend likes]]></title>
+            <link>http://localhost:3000/posts/girlfriend</link>
+            <guid>http://localhost:3000/posts/girlfriend</guid>
+            <pubDate>Thu, 07 Jul 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>This blog is used to record everything my girlfriend likes❤</p>
+]]></description>
+            <author>Wul55267@gmail.com (BerLin)</author>
+            <category>Life</category>
+            <category>news</category>
+        </item>
         <item>
             <title><![CDATA[Type Challenge]]></title>
             <link>http://localhost:3000/posts/type-challenge</link>
