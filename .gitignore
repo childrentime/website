@@ -37,3 +37,5 @@ yarn-error.log*
 public/rss/atom.xml
 public/rss/feed.json
 public/rss/feed.xml
+
+.vscode

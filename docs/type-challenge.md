@@ -1,8 +1,8 @@
 ---
 title: Type Challenge
-date: '2022-06-07'
+date: "2022-06-07"
 category: Tech
-tag: 'typescript'
+tag: "typescript"
 description: "This blog is used to record the answers of [type challenge](https://github.com/type-challenges/type-challenges)"
 ---
 
@@ -11,7 +11,7 @@ description: "This blog is used to record the answers of [type challenge](https:
 ### Hello World
 
 ```ts
-type HelloWorld = string
+type HelloWorld = string;
 ```
 
 ## Easy
@@ -19,13 +19,13 @@ type HelloWorld = string
 ### Pick
 
 ```ts
-type MyPick<T, K extends keyof T> = { [Key in K]: T[Key] }
+type MyPick<T, K extends keyof T> = { [Key in K]: T[Key] };
 ```
 
 ### Readonly
 
 ```ts
-type MyReadonly<T> = {readonly [P in keyof T]: T[P]}
+type MyReadonly<T> = { readonly [P in keyof T]: T[P] };
 ```
 
 ### TupleToObject
@@ -33,7 +33,7 @@ type MyReadonly<T> = {readonly [P in keyof T]: T[P]}
 ```ts
 type TupleToObject<T extends ReadonlyArray<any>> = {
   [P in T[number]]: P;
-}
+};
 ```
 
 ### First Of Array
@@ -41,13 +41,13 @@ type TupleToObject<T extends ReadonlyArray<any>> = {
 ```ts
 type First<T extends any[]> = T["length"] extends 0 ? never : T[0];
 
-type First<T extends any[]> = T extends [infer F, ...infer Rest] ? F : never
+type First<T extends any[]> = T extends [infer F, ...infer Rest] ? F : never;
 ```
 
 ### Length Of Tuple
 
 ```ts
-type Length<T extends ReadonlyArray<any>> = T['length']
+type Length<T extends ReadonlyArray<any>> = T["length"];
 ```
 
 ### Exclude
@@ -59,19 +59,22 @@ type MyExclude<T, U> = T extends U ? never : T;
 ### Awaited
 
 ```ts
-type MyAwaited<T>  = T extends Promise<infer U>? MyAwaited<U>: T;
+type MyAwaited<T> = T extends Promise<infer U> ? MyAwaited<U> : T;
 ```
 
 ### If
 
 ```ts
-type If<C extends boolean, T, F> = C extends true ? T: F
+type If<C extends boolean, T, F> = C extends true ? T : F;
 ```
 
 ### Concat
 
 ```ts
-type Concat<T extends ReadonlyArray<any>, U extends ReadonlyArray<any>> = [...T,...U]
+type Concat<T extends ReadonlyArray<any>, U extends ReadonlyArray<any>> = [
+  ...T,
+  ...U
+];
 ```
 
 ### Includes
@@ -98,7 +101,7 @@ type Push<T extends any[], U> = [...T, U];
 ### Unshift
 
 ```ts
-type Unshift<T extends unknown[], U> = [U,...T] 
+type Unshift<T extends unknown[], U> = [U, ...T];
 ```
 
 ### Parameters
@@ -109,7 +112,6 @@ type MyParameters<T extends (...args: any[]) => any> = T extends (
 ) => any
   ? A
   : never;
-
 ```
 
 ## Medium
@@ -123,7 +125,7 @@ type MyReturnType<T> = T extends (...args: any[]) => infer R ? R : never;
 ### Omit
 
 ```ts
-type MyOmit<T,K> = Pick<T, Exclude<keyof T, K>>
+type MyOmit<T, K> = Pick<T, Exclude<keyof T, K>>;
 ```
 
 ### Readonly 2
@@ -133,7 +135,9 @@ type MyReadonly2<T, K = keyof T> = {
   readonly [Key in keyof T as Key extends K ? Key : never]: T[Key];
 } & { [Key in keyof T as Key extends K ? never : Key]: T[Key] };
 
-type MyReadonly2<T, K extends keyof T = keyof T> = { readonly [P in K]: T[P] } & Omit<T, K>;
+type MyReadonly2<T, K extends keyof T = keyof T> = {
+  readonly [P in K]: T[P];
+} & Omit<T, K>;
 ```
 
 ### Deep Readonly
@@ -166,9 +170,11 @@ type Immutable<T> = T extends PrimitiveType
 ### TupleToUnion
 
 ```ts
-type TupleToUnion<T extends any[]> = T extends [infer F, ...infer Rest] ? F | TupleToUnion<Rest>: never
+type TupleToUnion<T extends any[]> = T extends [infer F, ...infer Rest]
+  ? F | TupleToUnion<Rest>
+  : never;
 
-type TupleToUnion<T extends any[]> = T[number]
+type TupleToUnion<T extends any[]> = T[number];
 ```
 
 ### Chainable Options
@@ -193,7 +199,6 @@ type Last<T extends any[]> = T extends [infer F, ...infer Rest]
     ? F
     : Last<Rest>
   : never;
-
 ```
 
 ### Pop
@@ -209,7 +214,6 @@ type MyAwaited<T> = T extends Promise<infer U> ? MyAwaited<U> : T;
 declare function PromiseAll<T extends readonly unknown[] | []>(
   values: T
 ): Promise<{ -readonly [P in keyof T]: MyAwaited<T[P]> }>;
-
 ```
 
 ### LookUp
@@ -229,7 +233,6 @@ type TrimLeft<S extends string> = S extends `${WhiteSpace}${infer Rest}`
 ### Trim
 
 ```ts
-
 type WhiteSpace = " " | "\t" | "\n";
 type TrimLeft<S extends string> = S extends `${WhiteSpace}${infer Rest}`
   ? TrimLeft<Rest>
@@ -389,5 +392,23 @@ type Diff<F, S> = {
 ### AnyOf
 
 ```ts
+type Empty = 0 | "" | false | [];
+type isEmpty<T> = T extends Empty
+  ? false
+  : T extends {}
+  ? keyof T extends never
+    ? false
+    : true
+  : false;
+type AnyOf<T extends readonly any[]> = T extends [infer F, ...infer Rest]
+  ? isEmpty<F> extends true
+    ? true
+    : AnyOf<Rest>
+  : false;
+```
 
+### IsNever
+
+```ts
+type IsNever<T> = [T] extends [never] ? true : false;
 ```
