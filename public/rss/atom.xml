@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:3000</id>
-    <title>Berlin's Blog</title>
-    <updated>2022-07-26T07:31:01.407Z</updated>
+    <title>LianWen Wu's Blog</title>
+    <updated>2022-12-28T08:07:44.299Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>BerLin</name>
@@ -13,27 +13,7 @@
     <link rel="self" href="http://localhost:3000/rss/atom.xml"/>
     <logo>http://localhost:3000/logo.svg</logo>
     <icon>http://localhost:3000/favicon.png</icon>
-    <rights>All rights reserved 2022, Berlin</rights>
-    <entry>
-        <title type="html"><![CDATA[A list of everything my girlfriend likes]]></title>
-        <id>http://localhost:3000/posts/girlfriend</id>
-        <link href="http://localhost:3000/posts/girlfriend"/>
-        <updated>2022-07-07T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>This blog is used to record everything my girlfriend likes❤</p>
-]]></summary>
-        <author>
-            <name>BerLin</name>
-            <email>Wul55267@gmail.com</email>
-            <uri>https://twitter.com/wulianwen1</uri>
-        </author>
-        <category label="Life"/>
-        <category label="news"/>
-        <contributor>
-            <name>BerLin</name>
-            <email>Wul55267@gmail.com</email>
-            <uri>https://twitter.com/wulianwen1</uri>
-        </contributor>
-    </entry>
+    <rights>All rights reserved 2022, LianWen Wu</rights>
     <entry>
         <title type="html"><![CDATA[Type Challenge]]></title>
         <id>http://localhost:3000/posts/type-challenge</id>
@@ -48,46 +28,6 @@
         </author>
         <category label="Tech"/>
         <category label="typescript"/>
-        <contributor>
-            <name>BerLin</name>
-            <email>Wul55267@gmail.com</email>
-            <uri>https://twitter.com/wulianwen1</uri>
-        </contributor>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[About Me, The Bad Part]]></title>
-        <id>http://localhost:3000/posts/about-me-the-bad-part</id>
-        <link href="http://localhost:3000/posts/about-me-the-bad-part"/>
-        <updated>2022-06-02T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>Something bad happened recently and I feel very guilty</p>
-]]></summary>
-        <author>
-            <name>BerLin</name>
-            <email>Wul55267@gmail.com</email>
-            <uri>https://twitter.com/wulianwen1</uri>
-        </author>
-        <category label="Life"/>
-        <category label="news"/>
-        <contributor>
-            <name>BerLin</name>
-            <email>Wul55267@gmail.com</email>
-            <uri>https://twitter.com/wulianwen1</uri>
-        </contributor>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A list of gifts to satisfy your girlfriend]]></title>
-        <id>http://localhost:3000/posts/gift</id>
-        <link href="http://localhost:3000/posts/gift"/>
-        <updated>2022-05-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>I am often confused about what gift to buy for my girlfriend for the holidays. So I create this gift list which has a great feedback. I wish it will help you</p>
-]]></summary>
-        <author>
-            <name>BerLin</name>
-            <email>Wul55267@gmail.com</email>
-            <uri>https://twitter.com/wulianwen1</uri>
-        </author>
-        <category label="Life"/>
-        <category label="shopping-guide"/>
         <contributor>
             <name>BerLin</name>
             <email>Wul55267@gmail.com</email>

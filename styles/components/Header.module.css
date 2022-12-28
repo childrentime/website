@@ -52,7 +52,7 @@
   vertical-align: sub;
 }
 
-@media print, screen and (max-width: 48em) {
+@media print, screen and (max-width: 60em) {
   .sitename {
     margin-bottom: 20px;
     text-align: center;

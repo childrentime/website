@@ -1,4 +1,4 @@
-export const name = "Berlin";
+export const name = "LianWen Wu";
 export const twitter = "https://twitter.com/wulianwen1";
 export const github = "https://github.com/childrentime";
 export const title = `${name}'s Blog`;
@@ -13,9 +13,7 @@ export const tags = [
   "javascript",
   "node.js",
   "year-end",
-  "shopping-guide",
   "news",
   "typescript",
 ];
 
-export const CHINISE = "-zh-CN";

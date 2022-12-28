@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Berlin's Blog</title>
+        <title>LianWen Wu's Blog</title>
         <link>http://localhost:3000</link>
         <description></description>
-        <lastBuildDate>Tue, 26 Jul 2022 07:31:01 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Dec 2022 08:07:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
-            <title>Berlin's Blog</title>
+            <title>LianWen Wu's Blog</title>
             <url>http://localhost:3000/logo.svg</url>
             <link>http://localhost:3000</link>
         </image>
-        <copyright>All rights reserved 2022, Berlin</copyright>
-        <item>
-            <title><![CDATA[A list of everything my girlfriend likes]]></title>
-            <link>http://localhost:3000/posts/girlfriend</link>
-            <guid>http://localhost:3000/posts/girlfriend</guid>
-            <pubDate>Thu, 07 Jul 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[<p>This blog is used to record everything my girlfriend likes❤</p>
-]]></description>
-            <author>Wul55267@gmail.com (BerLin)</author>
-            <category>Life</category>
-            <category>news</category>
-        </item>
+        <copyright>All rights reserved 2022, LianWen Wu</copyright>
         <item>
             <title><![CDATA[Type Challenge]]></title>
             <link>http://localhost:3000/posts/type-challenge</link>
@@ -34,28 +23,6 @@
             <author>Wul55267@gmail.com (BerLin)</author>
             <category>Tech</category>
             <category>typescript</category>
-        </item>
-        <item>
-            <title><![CDATA[About Me, The Bad Part]]></title>
-            <link>http://localhost:3000/posts/about-me-the-bad-part</link>
-            <guid>http://localhost:3000/posts/about-me-the-bad-part</guid>
-            <pubDate>Thu, 02 Jun 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[<p>Something bad happened recently and I feel very guilty</p>
-]]></description>
-            <author>Wul55267@gmail.com (BerLin)</author>
-            <category>Life</category>
-            <category>news</category>
-        </item>
-        <item>
-            <title><![CDATA[A list of gifts to satisfy your girlfriend]]></title>
-            <link>http://localhost:3000/posts/gift</link>
-            <guid>http://localhost:3000/posts/gift</guid>
-            <pubDate>Thu, 26 May 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[<p>I am often confused about what gift to buy for my girlfriend for the holidays. So I create this gift list which has a great feedback. I wish it will help you</p>
-]]></description>
-            <author>Wul55267@gmail.com (BerLin)</author>
-            <category>Life</category>
-            <category>shopping-guide</category>
         </item>
         <item>
             <title><![CDATA[New Blog]]></title>
