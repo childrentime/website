@@ -10,7 +10,7 @@ import {
   IItemContent,
   IPrevNextPost,
 } from "../../api";
-import { CHINISE, title } from "../../constants/meta";
+import { title } from "../../constants/meta";
 import styles from "../../styles/posts/Slug.module.css";
 
 interface IProps {
@@ -21,18 +21,8 @@ interface IProps {
 const Post: NextPage<IProps> = ({ post, nav }) => {
   const { previous, next } = nav;
   const router = useRouter();
-  const toggleEnglish = () => {
-    const slug = router.query.slug as string;
-    if (slug.endsWith(CHINISE)) {
-      router.push(`${slug.substring(0, slug.length - 6)}`);
-    }
-  };
-  const toggleChinese = () => {
-    const slug = router.query.slug as string;
-    if (!slug.endsWith(CHINISE)) {
-      router.push(`${slug.concat(CHINISE)}`);
-    }
-  };
+
+
   return (
     <>
       <Head>
@@ -41,11 +31,6 @@ const Post: NextPage<IProps> = ({ post, nav }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.post}>
-        <div className={styles.i18n}>
-          <span onClick={toggleEnglish}>English</span>
-          <span> | </span>
-          <span onClick={toggleChinese}>中文</span>
-        </div>
         <h1 className={styles.postTitle}>{post.title}</h1>
         <div className={styles.postMeta}>
           {dayjs(post.date).format("MMM DD,YYYY")}
