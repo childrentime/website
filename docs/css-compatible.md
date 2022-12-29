@@ -29,3 +29,26 @@ This is a possible solution to fix it.
   }
 </style>
 ```
+
+## Safari overflow-hidden-with-border-radius not work
+
+[question link](https://stackoverflow.com/questions/49066011/overflow-hidden-with-border-radius-not-working-on-safari)
+
+Releted post: <https://www.sungikchoi.com/blog/safari-overflow-border-radius/>
+
+solution:
+
+```html
+<div class="wrapper">
+  <div class="item"></div>
+</div>
+
+<style>
+  .wrapper {
+    border-radius: 10px;
+    overflow: hidden;
+    // add this line to fix
+    isolation: isolate;
+  }
+</style>
+```
