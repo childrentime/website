@@ -3,7 +3,7 @@ title: Type Challenge
 date: "2022-06-07"
 category: Tech
 tag: "typescript"
-description: "This blog is used to record the answers of [type challenge](https://github.com/type-challenges/type-challenges)"
+description: "The answers of [type challenge](https://github.com/type-challenges/type-challenges)"
 ---
 
 ## Warm-up

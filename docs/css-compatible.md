@@ -3,7 +3,7 @@ title: CSS Compatible
 date: "2022-12-29"
 category: Tech
 tag: "css"
-description: "This blog is used to document CSS compatibility issues"
+description: "CSS compatibility issues"
 ---
 
 ## IOS scrolling stutters

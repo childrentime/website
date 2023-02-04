@@ -15,6 +15,6 @@ export const tags = [
   "year-end",
   "news",
   "typescript",
-  "css"
+  "css",
+  "macos",
 ];
-
