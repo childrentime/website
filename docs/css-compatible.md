@@ -52,3 +52,19 @@ solution:
   }
 </style>
 ```
+
+## Ios Only Style
+
+Sometimes we want styles to only apply to Ios.
+
+The not operator is useful here if you don't want to add styles to Ios.
+
+[Compatibility](https://caniuse.com/?search=-webkit-touch-callout)
+
+```css
+@supports (-webkit-touch-callout: initial) {
+  .iosStyle {
+    margin: 0;
+  }
+}
+```
