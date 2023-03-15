@@ -4,21 +4,14 @@ import Link from "next/link";
 import Image from "next/image";
 import moon from "./moon.svg";
 import sun from "./sun.svg";
-import { useEffect, useState } from "react";
+import { useDarkMode } from "@reactuses/core";
 
 const Header = () => {
-  const [dark, setDark] = useState<boolean>(false);
-  const toggleDark = () => {
-    const root = document.getRootNode() as Document;
-    root.children[0].classList.toggle("dark");
-    setDark(!dark);
-  };
+  const [dark, toggleDark] = useDarkMode({
+    classNameDark: "dark",
+    classNameLight: "light",
+  });
 
-  useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setDark(true);
-    }
-  }, []);
   return (
     <div className={styles.header}>
       <div className={styles.sitename}>

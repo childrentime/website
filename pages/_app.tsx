@@ -16,13 +16,23 @@ function MyApp({ Component, pageProps }: AppProps) {
         dangerouslySetInnerHTML={{
           // 增加一个自执行的函数
           __html: `
-        (function () {
-          const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
-          const root = document.getRootNode()
-          if(darkQuery.matches){
-            root.children[0].classList.add("dark");
-          }
-        })();
+          (function () {
+            function setDark(dark) {
+              dark &&  document.documentElement.classList.add('dark');
+            }
+            let store;
+            try {
+              store = JSON.parse(localStorage.getItem('reactuses-color-scheme'));
+            } catch (err) { }
+            let dark;
+            if(store === null){
+              const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+              dark = darkQuery.matches;
+            }else {
+              dark = store;
+            }
+            setDark(dark)
+          })();
       `,
         }}
       ></script>
