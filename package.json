@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@reactuses/core": "^2.2.5",
+    "@reactuses/core": "^2.2.6",
     "@types/markdown-it": "^12.2.3",
     "dayjs": "^1.11.2",
     "feed": "^4.2.2",
