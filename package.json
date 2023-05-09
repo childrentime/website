@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "analyze": "ANALYZE=true next build",
     "lint": "next lint"
   },
   "dependencies": {
-    "@reactuses/core": "^2.2.6",
+    "@next/bundle-analyzer": "^13.4.1",
+    "@reactuses/core": "^2.2.7",
     "@types/markdown-it": "^12.2.3",
     "dayjs": "^1.11.2",
     "feed": "^4.2.2",
