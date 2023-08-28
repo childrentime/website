@@ -7,7 +7,7 @@ export const home = "Home";
 export const about = "About";
 export const rss = "RSS";
 
-export const category = ["Announcements", "Life", "Tech"];
+export const category = ["Announcements", "Life", "Tech", "Record"];
 export const tags = [
   "meta",
   "javascript",
