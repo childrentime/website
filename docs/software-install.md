@@ -8,7 +8,7 @@ description: "Common software installation method in Macos."
 
 ## Mysql
 
-### Insatll
+### Install
 
 ```shell
 brew install mysql

@@ -17,4 +17,5 @@ export const tags = [
   "typescript",
   "css",
   "macos",
+  "java",
 ];
