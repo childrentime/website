@@ -28,6 +28,8 @@ html.dark {
   --c-category-title: #b4c7da;
   --c-description: #ebedef;
   --c-pre: #e0eeee;
+  --c-code-bg: #f7f8f83b;
+  --c-code-border: #dadada;
 }
 
 html,

@@ -6,6 +6,8 @@ tag: "macos"
 description: "Common software installation method in Macos."
 ---
 
+[[toc]]
+
 ## Mysql
 
 ### Install

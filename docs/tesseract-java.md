@@ -6,6 +6,8 @@ tag: "java"
 description: "Use tesseract in Java."
 ---
 
+[[toc]]
+
 ## Tesseract
 
 ### Install

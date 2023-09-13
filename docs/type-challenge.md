@@ -6,6 +6,8 @@ tag: "typescript"
 description: "The answers of [type challenge](https://github.com/type-challenges/type-challenges)"
 ---
 
+[[toc]]
+
 ## Warm-up
 
 ### Hello World

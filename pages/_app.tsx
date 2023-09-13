@@ -38,6 +38,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       ></script>
       <Header />
       <div className={styles.layout}>
+        <nav className="table-of-contents" />
         <div className={styles.left}>
           <div className={styles.content}>
             <Component {...pageProps} />

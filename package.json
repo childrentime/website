@@ -17,6 +17,8 @@
     "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
     "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.7",
+    "markdown-it-toc-done-right": "^4.2.0",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",

@@ -6,6 +6,8 @@ tag: "css"
 description: "CSS compatibility issues"
 ---
 
+[[toc]]
+
 ## IOS scrolling stutters
 
 [question link](https://stackoverflow.com/questions/9807620/ipad-safari-scrolling-causes-html-elements-to-disappear-and-reappear-with-a-dela)
