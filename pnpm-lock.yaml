@@ -9,8 +9,8 @@ dependencies:
     specifier: ^13.4.1
     version: 13.4.13
   '@reactuses/core':
-    specifier: ^4.0.6
-    version: 4.0.6(react@18.1.0)
+    specifier: ^4.0.10
+    version: 4.0.10(react@18.1.0)
   '@types/markdown-it':
     specifier: ^12.2.3
     version: 12.2.3
@@ -247,8 +247,8 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: false
 
-  /@reactuses/core@4.0.6(react@18.1.0):
-    resolution: {integrity: sha512-ZqG7cZokTeVlJ+Wui84Iy4y64On5N8WcwIaNkH4AmiS48JbrG6QqcbsaJPMCmQqIeKlXtBeQtFONOtyYbhTB/g==}
+  /@reactuses/core@4.0.10(react@18.1.0):
+    resolution: {integrity: sha512-QpAp/jvzLpDMq+coeJFDldjxhyqlnEn8Tb/OsChCbW2A0fjtQDGidh0ZqjnObSzIi08el4BuSQxy5/u36vhRrw==}
     peerDependencies:
       react: ^16.8.0  || ^17.0.0 || ^18.0.0
     dependencies:

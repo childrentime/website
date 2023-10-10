@@ -4,12 +4,21 @@ import styles from "../styles/App.module.css";
 import Link from "next/link";
 import { category, github, tags, title, twitter } from "../constants/meta";
 import Header from "../components/header";
+import { useRouter } from "next/router";
 
 export function getStaticProps() {
   return {};
 }
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+  const currentPath = router.pathname;
+  const isResume = currentPath === "/resume";
+
+  if (isResume) {
+    return <Component {...pageProps} />;
+  }
+
   return (
     <div className="body-container">
       <script

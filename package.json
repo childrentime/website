@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@next/bundle-analyzer": "^13.4.1",
-    "@reactuses/core": "^4.0.6",
+    "@reactuses/core": "^4.0.10",
     "@types/markdown-it": "^12.2.3",
     "dayjs": "^1.11.2",
     "feed": "^4.2.2",
