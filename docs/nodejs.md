@@ -1425,3 +1425,37 @@ callbackFunction((err, ret) => {
     console.log(ret);
 });
 ```
+
+## Workers
+
+```ts
+import { fileURLToPath } from "node:url";
+import { Worker, isMainThread, workerData } from "worker_threads";
+
+const __filename = fileURLToPath(import.meta.url);
+
+if (isMainThread) {
+  const sharedBuffer = new SharedArrayBuffer(1 * Int32Array.BYTES_PER_ELEMENT);
+  const sharedArray = new Int32Array(sharedBuffer);
+
+  const worker1 = new Worker(__filename, { workerData: sharedBuffer });
+  const worker2 = new Worker(__filename, { workerData: sharedBuffer });
+
+  worker1.on("exit", () => {
+    console.log(sharedArray);
+  });
+
+  worker2.on("exit", () => {
+    console.log(sharedArray);
+  });
+} else {
+  const sharedArray = new Int32Array(workerData);
+
+  for (let i = 0; i < 10000; i++) {
+    // thread race condition
+    sharedArray[0]++;
+    // solution
+    // Atomics.add(sharedArray, 0, 1);
+  }
+}
+```
