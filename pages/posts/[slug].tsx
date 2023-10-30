@@ -60,12 +60,12 @@ const Post: NextPage<IProps> = ({ post, nav }) => {
         </div>
         <div className={styles.postNav}>
           {previous && (
-            <Link href={previous.slug}>
+            <Link href={`/post/${previous.slug}`}>
               <a className={styles.pre}>{previous.title}</a>
             </Link>
           )}
           {next && (
-            <Link href={next.slug}>
+            <Link href={`/post/${next.slug}`}>
               <a className={styles.next}>{next.title}</a>
             </Link>
           )}
