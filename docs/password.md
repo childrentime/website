@@ -17,3 +17,9 @@ description: "Local password record."
 ```shell
 85c4d482f236611ccde423ef7522ce6ee3931e67ba3f4aefce795ea2e78e49c0
 ```
+
+## InfluxDB
+
+```shell
+jm68itoNKvJdEyc2qqcZ0QQVnnYavDrgaM1ei1WsHqyIuTQCuDHoFvYNN00YH6BI0vBqsKRSvZs4gusBPuOpJw==
+```
