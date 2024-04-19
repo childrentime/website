@@ -5,6 +5,7 @@ import Link from "next/link";
 import { category, github, tags, title, twitter } from "../constants/meta";
 import Header from "../components/header";
 import { useRouter } from "next/router";
+import Script from "next/script";
 
 export function getStaticProps() {
   return {};
@@ -21,6 +22,16 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <div className="body-container">
+      <Script
+        id="ms"
+        dangerouslySetInnerHTML={{
+          __html: ` (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "lyx9i5808b");`,
+        }}
+      ></Script>
       <script
         dangerouslySetInnerHTML={{
           // 增加一个自执行的函数
